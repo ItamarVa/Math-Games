@@ -52,7 +52,7 @@ export const Dashboard: React.FC<DashboardProps> = ({ topics, onSelectTopic }) =
     <div className="max-w-6xl mx-auto p-6">
       <div className="text-center mb-10">
         <h1 className="text-4xl md:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 mb-4">
-          ברוכים הבאים לחשבון בכיף!
+          ברוכים הבאים ל-Math Game!
         </h1>
         <p className="text-xl text-gray-600">
           מתחילים לתרגל וצוברים נקודות 🏆

@@ -34,7 +34,7 @@ export default function App() {
             <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-xl">
               ∑
             </div>
-            <span className="font-bold text-xl tracking-tight hidden md:inline">חשבון בכיף</span>
+            <span className="font-bold text-xl tracking-tight hidden md:inline">Math Game</span>
           </div>
 
           <div className="flex items-center gap-4">
