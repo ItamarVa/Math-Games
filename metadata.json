@@ -1,0 +1,7 @@
+{
+  "name": "חשבון בכיף (Math Fun IL)",
+  "description": "לומדה אינטראקטיבית לתרגול חשבון לכיתה ד' עם מורה פרטי מבוסס בינה מלאכותית.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
