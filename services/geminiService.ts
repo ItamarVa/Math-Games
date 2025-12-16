@@ -1,7 +1,19 @@
 
 import { GoogleGenAI, Type, LiveServerMessage, Modality, GenerateContentResponse } from "@google/genai";
 
-const apiKey = process.env.API_KEY || '';
+// Safety check: ensure process is defined before accessing it to prevent white screen crashes
+const getApiKey = () => {
+  try {
+    if (typeof process !== 'undefined' && process.env) {
+      return process.env.API_KEY || '';
+    }
+  } catch (e) {
+    // Ignore error if process is not defined
+  }
+  return '';
+};
+
+const apiKey = getApiKey();
 const ai = new GoogleGenAI({ apiKey });
 
 // Helper for timeout
@@ -151,7 +163,7 @@ export const generateRewardVideo = async (prompt: string): Promise<string | null
   }
 
   // Create a new instance to ensure fresh key if selected
-  const freshAi = new GoogleGenAI({ apiKey: process.env.API_KEY });
+  const freshAi = new GoogleGenAI({ apiKey: getApiKey() });
 
   try {
     let operation = await freshAi.models.generateVideos({
@@ -171,7 +183,7 @@ export const generateRewardVideo = async (prompt: string): Promise<string | null
 
     const videoUri = operation.response?.generatedVideos?.[0]?.video?.uri;
     if (videoUri) {
-      return `${videoUri}&key=${process.env.API_KEY}`;
+      return `${videoUri}&key=${getApiKey()}`;
     }
     return null;
   } catch (error) {
