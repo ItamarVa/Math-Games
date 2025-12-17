@@ -1,7 +1,7 @@
 
 import React from 'react';
-import { Topic, TopicCategory } from '../types';
-import { MIXED_TOPIC } from '../constants';
+import { Topic, TopicCategory } from '../types.ts';
+import { MIXED_TOPIC } from '../constants.ts';
 
 interface DashboardProps {
   topics: Topic[];

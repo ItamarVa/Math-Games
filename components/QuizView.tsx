@@ -1,8 +1,8 @@
 
 import React, { useState, useEffect, useRef } from 'react';
-import { generateQuestion } from '../services/geminiService';
-import { getFallbackQuestion, getRandomFallbackQuestion } from '../utils/fallbacks';
-import { Question, Topic } from '../types';
+import { generateQuestion } from '../services/geminiService.ts';
+import { getFallbackQuestion, getRandomFallbackQuestion } from '../utils/fallbacks.ts';
+import { Question, Topic } from '../types.ts';
 
 interface QuizViewProps {
   topic: Topic;
@@ -15,7 +15,7 @@ const MIXED_PROMPTS = [
   'מבנה עשרוני: ערך הספרה וערך המקום במספרים עד מיליון',
   'ארבע פעולות החשבון: חיבור, חיסור, כפל וחילוק',
   'השוואת מספרים וביטויים חשבוניים (גדול/קטן/שווה)',
-  'סדר פעולות חשבון: סוגריים, כפל וחילוק קודמים לחיבור וחיסור',
+  'סדר פעולות חשבון: סוגריים, כפל וחילוק במספרים',
   'זיהוי שברים וכתיבתם במילים ובספרות',
   'הפיכת מספר מעורב לשבר מדומה (גדול מ-1) ולהפך',
   'אלכסונים במצולעים: תכונות וזיהוי',

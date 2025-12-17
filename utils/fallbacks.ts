@@ -1,5 +1,5 @@
 
-import { Question, TopicCategory } from '../types';
+import { Question, TopicCategory } from '../types.ts';
 
 const FALLBACK_DB: Record<string, Omit<Question, 'id'>[]> = {
   [TopicCategory.WHOLE_NUMBERS]: [

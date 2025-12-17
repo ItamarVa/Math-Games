@@ -1,11 +1,11 @@
 
 import React, { useState } from 'react';
-import { Dashboard } from './components/Dashboard';
-import { QuizView } from './components/QuizView';
-import { LiveTutorView } from './components/LiveTutorView';
-import { RewardsView } from './components/RewardsView';
-import { TOPICS } from './constants';
-import { Topic, AppView } from './types';
+import { Dashboard } from './components/Dashboard.tsx';
+import { QuizView } from './components/QuizView.tsx';
+import { LiveTutorView } from './components/LiveTutorView.tsx';
+import { RewardsView } from './components/RewardsView.tsx';
+import { TOPICS } from './constants.ts';
+import { Topic, AppView } from './types.ts';
 
 export default function App() {
   const [currentView, setCurrentView] = useState<AppView>(AppView.DASHBOARD);

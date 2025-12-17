@@ -1,5 +1,5 @@
 
-import { Topic, TopicCategory } from './types';
+import { Topic, TopicCategory } from './types.ts';
 
 // Special topic for mixed practice
 export const MIXED_TOPIC: Topic = {

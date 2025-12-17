@@ -1,7 +1,7 @@
 
 import React, { useEffect, useRef, useState } from 'react';
-import { createLiveSession } from '../services/geminiService';
-import { createPcmBlob, decodeAudioData, decodeAudioResponse } from '../utils/audio';
+import { createLiveSession } from '../services/geminiService.ts';
+import { createPcmBlob, decodeAudioData, decodeAudioResponse } from '../utils/audio.ts';
 import { LiveServerMessage } from '@google/genai';
 
 interface LiveTutorViewProps {

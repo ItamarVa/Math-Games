@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { generateRewardVideo } from '../services/geminiService';
+import { generateRewardVideo } from '../services/geminiService.ts';
 
 interface RewardsViewProps {
   points: number;
